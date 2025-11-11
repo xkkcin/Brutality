@@ -54,9 +54,9 @@ public class BladeOfTheRuinedKingSword extends BrutalitySwordItem {
                 });
 
         if (pAttacker instanceof Player player) {
-            pTarget.hurt(pAttacker.damageSources().playerAttack(player), pTarget.getHealth() * 0.08F);
+            pTarget.hurt(pAttacker.damageSources().playerAttack(player), pTarget.getHealth() * 0.005F);
         } else {
-            pTarget.hurt(pAttacker.damageSources().mobAttack(pAttacker), pTarget.getHealth() * 0.08F);
+            pTarget.hurt(pAttacker.damageSources().mobAttack(pAttacker), pTarget.getHealth() * 0.005F);
         }
 
         return super.hurtEnemy(pStack, pTarget, pAttacker);
